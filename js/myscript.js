@@ -39,11 +39,11 @@ for(i=0; i < 5 ; i++){ //ciclo for in cui cicliamo 5 numeri
 setTimeout(function (){
     document.getElementById('numeri').classList.add("displaynone");
     for(i=0; i < 5 ; i++){
-    }}, 2000); 
+    }}, 5000); 
 
 setTimeout(function (){
 for(i=0; i < 5 ; i++){
-    let numeriUtente = parseInt(prompt("Please enter your name", "Harry Potter"));
+    let numeriUtente = parseInt(prompt("Inserisci 5 numeri da 1 a 100"));
         if(!numeriRandomArray.includes(numeriUtente)){
                     
         }else{
@@ -52,7 +52,7 @@ for(i=0; i < 5 ; i++){
             }
             console.log(numeriUtente)
             console.log(numeriUtenteArr)
-            divNumeriUtente.innerHTML =  "Hai indovinato " + numeriUtenteArr.length +" " + "Numero/i" ;
+            divNumeriUtente.innerHTML =  "Hai indovinato " + numeriUtenteArr.length + " " + "Numero/i" ;
             }   
-        }, 3000); 
+        }, 6000); 
 
