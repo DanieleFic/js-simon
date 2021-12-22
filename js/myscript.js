@@ -36,15 +36,15 @@ for(i=0; i < 5 ; i++){ //ciclo for in cui cicliamo 5 numeri
     
 }
 
-setTimeout(function (){
+setTimeout(function (){ //creiamo una funzione setTimeout che dopo 14secondi da la classe displaynone ai numeri dell AI
     document.getElementById('numeri').classList.add("displaynone");
     for(i=0; i < 5 ; i++){
-    }}, 5000); 
+    }}, 14000); //setTimer di 14 secondi
 
-setTimeout(function (){
+setTimeout(function (){//creiamo una funzione setTimeout che dopo 15.5s ti chiede il prompt di 5 numeri
 for(i=0; i < 5 ; i++){
-    let numeriUtente = parseInt(prompt("Inserisci 5 numeri da 1 a 100"));
-        if(!numeriRandomArray.includes(numeriUtente)){
+    let numeriUtente = parseInt(prompt("Indovina i numeri dell AI"));
+        if(!numeriRandomArray.includes(numeriUtente)){//se i numeri dell utente sono uguali a quelli dell AI li pusha in un array separato
                     
         }else{
             console.log("hai indovinato un numero");
@@ -54,5 +54,6 @@ for(i=0; i < 5 ; i++){
             console.log(numeriUtenteArr)
             divNumeriUtente.innerHTML =  "Hai indovinato " + numeriUtenteArr.length + " " + "Numero/i" ;
             }   
-        }, 6000); 
+        }, 15500); 
+
 
