@@ -11,9 +11,11 @@ Consigli del giorno:
 
 
 console.log("ciao") //console log di ciao
-let numeriRandomArray = []; //creiamo un array vuoto in cui pushiamo i nostri numeri random 
+let numeriRandomArray = [];//creiamo un array vuoto in cui pushiamo i nostri numeri random 
+let numeriUtenteArr = []; //creiamo un array vuoto in cui pushiamo i  numeri dell utente
 
-let divNumeri = document.getElementById("numeri") //prendiamo il nostro div in html in cui mettiamo i numeri
+let divNumeri = document.getElementById("numeri")
+let divNumeriUtente = document.getElementById("numeriUtente") //prendiamo il nostro div in html in cui mettiamo i numeri
 
 function generaNumeri(){ //faccio una function in cui generiamo i numeri e se esce un numero doppio ne genera un altro
     let numeroGenerato = Math.floor(Math.random() * 100 + 1);
@@ -37,7 +39,20 @@ for(i=0; i < 5 ; i++){ //ciclo for in cui cicliamo 5 numeri
 setTimeout(function (){
     document.getElementById('numeri').classList.add("displaynone");
     for(i=0; i < 5 ; i++){
-       
-    }
-}, 3000); 
+    }}, 2000); 
+
+setTimeout(function (){
+for(i=0; i < 5 ; i++){
+    let numeriUtente = parseInt(prompt("Please enter your name", "Harry Potter"));
+        if(!numeriRandomArray.includes(numeriUtente)){
+                    
+        }else{
+            console.log("hai indovinato un numero");
+            numeriUtenteArr.push(numeriUtente)
+            }
+            console.log(numeriUtente)
+            console.log(numeriUtenteArr)
+            divNumeriUtente.innerHTML =  "Hai indovinato " + numeriUtenteArr.length +" " + "Numero/i" ;
+            }   
+        }, 3000); 
 

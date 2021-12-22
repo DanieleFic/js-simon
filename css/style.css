@@ -10,3 +10,8 @@ body{
 .displaynone{
     display: none;
 }
+
+.ms_numberUtente{
+    font-size: 100px;
+    background-color:lightcyan;
+}
