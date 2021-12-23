@@ -19,3 +19,11 @@ body{
 .ms_button{
     margin-top: 40px;
 }
+
+.none{
+    display: none;
+}
+
+.replay{
+    display: block;
+}
